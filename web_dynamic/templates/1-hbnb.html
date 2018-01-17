@@ -7,9 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/3-footer.css?{{ cache_id }}" />
     <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css?{{ cache_id }}" />
     <link rel="stylesheet" type="text/css" href="../static/styles/8-places.css?{{ cache_id }}" />
-    <link rel="icon" href="../static/images/icon.png" type="image/png">
-    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
-    <SCRIPT src="static/scripts/1-hbnb.js"></SCRIPT>
+    <link rel="icon" href="../static/images/icon.png?{{ cache_id }}" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="static/scripts/1-hbnb.js"></script>
 
     <title>AirBnb Clone</title>
   </head>
@@ -41,7 +41,7 @@
           <h4>&nbsp;</h4>
           <ul class="popover">
 	    {% for amty in amenities.values() %}
-	    <li><INPUT type="checkbox" data-id={{amty.id}} >{{ amty.name }}</li>
+	    <li><INPUT type="checkbox" data-id="{{ amty.id }}" data-name="{{ amty.name }}">{{ amty.name }}</li>
 	    {% endfor %}
           </ul>
 	</div>
