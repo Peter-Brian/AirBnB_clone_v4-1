@@ -1,12 +1,11 @@
-
-$(":checkbox").on("change", function() {
-  if (this.checked) {
-//append amenity id to list
-//      let list = [];
-  alert("testing123");
+let amen = [];
+$(document).ready(function () {
+  $('INPUT[type=checkbox]').click(function () {
+    if (this.checked) {
+      amen.push($(this).attr('data-name'));
     } else {
-//remove amenity id 
-//      list.pop({{amty.id}});
-      };
-//  $('DIV#H4').text(list);
+      amen.splice(amen.indexOf($(this).attr('data-name')), 1);
+    }
+    $('.amenities h4').text(amen);
+  });
 });
