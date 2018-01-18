@@ -2,11 +2,11 @@ let amen = [];
 $(document).ready(function () {
   $('INPUT[type=checkbox]').click(function () {
     if (this.checked) {
-      amen.push($(this).attr('data-name'));
+      amen.push($(this).data('name'));
     } else {
-      amen.splice(amen.indexOf($(this).attr('data-name')), 1);
+      amen.splice(amen.indexOf($(this).data('name')), 1);
     }
-    $('.amenities h4').text(amen);   
+    $('.amenities h4').text(amen.join(', '));   
   });
 });
 
