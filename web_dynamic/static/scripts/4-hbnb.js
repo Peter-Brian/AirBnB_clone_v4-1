@@ -6,7 +6,7 @@ $(document).ready(function () {
     } else {
       amen.splice(amen.indexOf($(this).attr('data-name')), 1);
     }
-    $('.amenities h4').text(Object.values(amen).join(', '));   
+    $('.amenities h4').text(amen);   
   });
 });
 
