@@ -154,7 +154,7 @@ No known bugs at this time.
 ###### Version 4
 
 - Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/EarthToJHuang)
-- Jeffrey Kanemitsu [Github[(https://github.com/jeffreykanemitsu) / [Twitter](https://twitter.com/canofmisosoup)
+- Jeffrey Kanemitsu [Github](https://github.com/jeffreykanemitsu) / [Twitter](https://twitter.com/canofmisosoup)
 
 ###### Version 3
 
