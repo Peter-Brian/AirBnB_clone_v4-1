@@ -43,9 +43,7 @@ $('button').click(function () {
                  </div>
                </div>
                  <div class="description">
-             {% autoescape false %}
                    <p>${place.description}</p>
-               {% endautoescape %}
              </div>
              </article>`;
         $('SECTION.places').append(article);
