@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/8-places.css?{{ cache_id }}" />
     <link rel="icon" href="../static/images/icon.png" type="image/png">
     <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
-    <SCRIPT src="static/scripts/3-hbnb.js"></SCRIPT>
+    <SCRIPT src="../static/scripts/3-hbnb.js"></SCRIPT>
 
     <title>AirBnb Clone</title>
   </head>
@@ -55,34 +55,6 @@
 	<h1>Places</h1>
 	{% for place in places.values()|sort(attribute='name') %}
 
-	<!-- <article> -->
-	<!--   <h2>{{ place.name }}</h2> -->
-	<!--   <div class="price_by_night"> -->
-	<!--     <p>${{ place.price_by_night }}</p> -->
-	<!--   </div> -->
-	<!--   <div class="information"> -->
-	<!--     <div class="max_guest"> -->
-	<!--       <div class="guest_image"></div> -->
-	<!--       <p>{{ place.max_guest }}</p> -->
-	<!--     </div> -->
-	<!--     <div class="number_rooms"> -->
-	<!--       <div class="bed_image"></div> -->
-	<!--       <p>{{ place.number_rooms }}</p> -->
-	<!--     </div> -->
-	<!--     <div class="number_bathrooms"> -->
-	<!--       <div class="bath_image"></div> -->
-	<!--       <p>{{ place.number_bathrooms }}</p> -->
-	<!--     </div> -->
-	<!--   </div> -->
-	<!--   <div class="user"> -->
-	<!--     <p><b>Owner: </b>{{ place.user.first_name ~ ' ' ~ place.user.last_name }}</p> -->
-	<!--   </div> -->
-	<!--   <div class="description"> -->
-	<!--     {% autoescape false %} -->
-	<!--     <p>{{ place.description }}</p> -->
-	<!--     {% endautoescape %} -->
-	<!--   </div> -->
-	<!-- </article> -->
 
 	{% endfor %}
       </section>
