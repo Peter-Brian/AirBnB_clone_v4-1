@@ -20,8 +20,6 @@ $('button').click(function () {
     'dataType': 'json',
     'data': {}})
     .done(function (places) {
-      // Loop through result
-      // add <article> to each item and list out components for each item. reference visual layout for previous tasks
       places.forEach(function (place) {
         let article = `<article>
                  <h2>${place.name}</h2>
@@ -50,5 +48,3 @@ $('button').click(function () {
       });
     });
 });
-// data = {place, place2, place3}
-// want name of place and info underneath
